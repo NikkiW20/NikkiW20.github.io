@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Participation Form</title>
+            <meta charset="UTF-8">
+            <meta name="description" content="Order Form">
+            <meta name="viewport" content="width=device-width, intial-scale=1.0">
+            <style>
+                fieldset{
+                display: flex;
+                margin-inline-start: 2px;
+                margin-inline-end: 2px;
+                padding-block-start: 0.35em;
+                padding-inline-start: 0.75em;
+                padding-inline-end: 0.75em;
+                padding-block-end: 0.625em;
+                min-inline-size: min-content;
+                border-width: 0px;
+                }
+                legend{
+                    color:#33475b;
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    font-size: 18pt;
+                    text-indent: 36px;
+                }
+                li {
+                padding: 12px;
+                  
+                /* other styling */
+                background-color: #82b5e7;
+                color: white;
+                font-family: Arial;
+                }
+                input{
+                    padding-top: 5px;
+                    padding bottom: 5px;
+                }
+                label{
+                    display: flex;
+                }
+            </style>
+            <style>
+                .dropdown {
+                  position: relative;
+                  display: inline-block;
+                }
+                
+                .dropdown-content {
+                  display: none;
+                  position: absolute;
+                  background-color: #f9f9f9;
+                  min-width: 160px;
+                  padding: 12px 16px;
+                  z-index: 1;
+                }
+                </style>
+                
+        </head>
+        <body>
+            <form id="ANWOrderForm" action="#" method="get">
+                <fieldset>
+                    <legend>Participant Information</legend>
+                    <ul>
+                        <li>
+                            <label for="firstname">First Name</label><input name="firstname" id="firstname" placeholder="First Name">
+                        </li>
+                        <li>
+                            <label for="Lastname">Last Name</label><input name="Lastname" id="Lastname" placeholder="Last Name">
+                        </li>
+                        <li>
+                            <label for="Address">Address</label><input name="Address" id="Address" placeholder="Ex. 1234 Any Lane">
+                        </li>
+                        <li>
+                            <label for="Emailaddress">Email Address</label><input name="Emailaddress" id="Emailaddress" placeholder="name@example.com">
+                        </li>
+                        <li>
+                            <label for="Phone">Phone</label><input name="Phone" id="Phone" placeholder="(000) 123-4567">
+                        </li>
+                        <li>T-Shirt size:
+                                <select name="tsize" id="tsize">
+                                    <option value="xs">XS</option>
+                                    <option value="sm">S</option>
+                                    <option value="m">M</option>
+                                    <option value="l">L</option>
+                                    <option value="xl">XL</option>
+                                    <option value="1x">1X</option>
+                                    <option value="2x">2X</option>
+                                    <option value="3x">3X</option>
+                                  </select>
+                        </li>
+                        <li>Gender:</li>
+                        <li>
+                            <input type="radio" id="male" name="male" value="male">
+                              <label for="male">Male</label>
+                              <input type="radio" id="female" name="female" value="female">
+                              <label for="female">Female</label>
+                              <input type="radio" id="pnta" name="pnta" value="pnta">
+                              <label for="pnta">I'd prefer not to answer</label>
+                        <li>Age of Consent:</li>
+                            <li><input type="checkbox" id="Over18" name="over18" value="Adult">
+                              <label for="Over18"> I certify that I am over 18 years of age.</label>
+                            </li>
+                            <li>
+                            <label for="Comments">Comment:</label><textarea rows="24" cols="64"></textarea>
+                        </li>
+                        <li><input type="submit" value="Submit"></li>
+                    </ul>
+                </fieldset>
+            </form>
+        </body>
+    </html>
